@@ -7,7 +7,6 @@ TESTS = test.js
 
 test: lint
 	@NODE_ENV=test ./node_modules/.bin/mocha \
-		--require should \
 		$(TESTS) \
 		--bail
 
@@ -16,7 +15,6 @@ test-cov:
 		node_modules/.bin/istanbul cover \
 		./node_modules/.bin/_mocha \
 		-- -u exports \
-		--require should \
 		$(TESTS) \
 		--bail
 
@@ -26,7 +24,6 @@ test-travis:
 		./node_modules/.bin/_mocha \
 		--report lcovonly \
 		-- -u exports \
-		--require should \
 		$(TESTS) \
 		--bail
 
