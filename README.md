@@ -4,7 +4,8 @@
 [![Test coverage][coveralls-image]][coveralls-url]
 [![Downloads][downloads-image]][downloads-url]
 
-Regular expression for email.
+Regular expression for email. [You shouldn't use RegExp for validating emails.](http://davidcel.is/blog/2012/09/06/stop-validating-email-addresses-with-regex/) Use it only for hinting to the user.
+
 
 ## Installation
 ```bash
@@ -21,6 +22,8 @@ regex.test('tobi+ferret@vision.com');
 
 ## See Also
 - [Update your Email RegExp][ddiaz] by [Dustin Diaz](https://github.com/ded)
+- [sindresorhus/email-regex](https://github.com/sindresorhus/email-regex)
+- [You shouldn't use this for validating emails.][davidcelis] Use it only for hinting to the user.
 
 ## License
 [MIT](https://tldrlegal.com/license/mit-license)
@@ -34,4 +37,5 @@ regex.test('tobi+ferret@vision.com');
 [downloads-image]: http://img.shields.io/npm/dm/regex-email.svg?style=flat-square
 [downloads-url]: https://npmjs.org/package/regex-email
 
-[ddiaz]: (http://www.dustindiaz.com/update-your-email-regexp/)
+[ddiaz]: http://www.dustindiaz.com/update-your-email-regexp/
+[davidcelis]: http://davidcel.is/blog/2012/09/06/stop-validating-email-addresses-with-regex/
