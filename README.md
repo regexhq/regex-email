@@ -14,7 +14,7 @@ $ npm install regex-email
 
 ## Usage
 ```js
-var regex = require('regex-utc-date');
+var regex = require('regex-email');
 
 regex.test('tobi+ferret@vision.com');
 // => true
