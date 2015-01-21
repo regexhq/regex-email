@@ -1,6 +1,6 @@
 {
   "name": "regex-email",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Regular expression for email",
   "main": "index.js",
   "scripts": {
