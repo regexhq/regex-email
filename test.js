@@ -16,6 +16,13 @@ describe('email regex', function() {
     assert.equal(regex.test('t.obi+_ferret@vision.com'), true);
   });
 
+  it('should match thai input', function() {
+    assert.equal(regex.test('email-test@universal-acceptance-test.international'), true);
+    assert.equal(regex.test('email-test@universal-acceptance-test.icu'), true);
+    assert.equal(regex.test('อีเมลทดสอบ@ยูเอทดสอบ.ไทย'), true);
+    assert.equal(regex.test('อีเมลทดสอบ@ทีเอชนิค.องค์กร.ไทย'), true);
+  });
+
   it('should catch incorrect input', function() {
     assert.equal(regex.test('*(*(*()))'), false);
     assert.equal(regex.test('foobar@@hello.com'), false);
